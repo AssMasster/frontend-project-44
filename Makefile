@@ -11,3 +11,6 @@ publish:
 
 link:
 	sudo npm link
+
+make lint:
+	npx eslint

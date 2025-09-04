@@ -5,3 +5,5 @@
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=AssMasster_frontend-project-44)
 
 https://asciinema.org/a/h30usuiFfs3IIakcVvNYemI53 
+
+https://asciinema.org/a/Q1DxmPl4G7qXgMhQueyMIfxDl

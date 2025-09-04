@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import  greetUser  from '../src/utils/greetUser.js';
+import  greetUser  from './utils/greetUser.js';
 import showRule from './utils/showRules.js';
 
 export default function startGame (gameRules, generateRound, roundCount = 3) {

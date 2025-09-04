@@ -1,32 +1,32 @@
-import getRandomNumber from '../utils/random.js';
+import getRandomNumber from '../utils/random.js'
 
-export function generateRound () {
-    const firstNumber = getRandomNumber(1, 50);
-    const secondNumber = getRandomNumber(1, 50);
-    
-    const operations = ['+', '-', '*'];
-    const operationIndex = getRandomNumber(0, operations.length - 1);
-    const operation = operations[operationIndex];
+export function generateRound() {
+  const firstNumber = getRandomNumber(1, 50)
+  const secondNumber = getRandomNumber(1, 50)
 
-    let question;
-    let correctAnswer;
+  const operations = ['+', '-', '*']
+  const operationIndex = getRandomNumber(0, operations.length - 1)
+  const operation = operations[operationIndex]
 
-    switch (operation) {
-        case '+': 
-            question = `${firstNumber} + ${secondNumber}`;
-            correctAnswer = String(firstNumber + secondNumber);
-        break;
-        case '-':
-            question = `${firstNumber} - ${secondNumber}`;
-            correctAnswer = String(firstNumber - secondNumber);
-        break; 
-        case '*':
-            question = `${firstNumber} * ${secondNumber}`;
-            correctAnswer = String(firstNumber * secondNumber);
-        break;
-    }
+  let question
+  let correctAnswer
 
-    return {question, correctAnswer};
+  switch (operation) {
+    case '+':
+      question = `${firstNumber} + ${secondNumber}`
+      correctAnswer = String(firstNumber + secondNumber)
+      break
+    case '-':
+      question = `${firstNumber} - ${secondNumber}`
+      correctAnswer = String(firstNumber - secondNumber)
+      break
+    case '*':
+      question = `${firstNumber} * ${secondNumber}`
+      correctAnswer = String(firstNumber * secondNumber)
+      break
+  }
+
+  return { question, correctAnswer }
 }
 
-export const gameRules = 'What is the result of the expression?';
+export const gameRules = 'What is the result of the expression?'

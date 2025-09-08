@@ -5,7 +5,7 @@ export function generateRound() {
   const secondNumber = getRandomNumber(1, 50)
 
   const operations = ['+', '-', '*']
-  const operationIndex = getRandomNumber(0, operations.length - 1)
+  const operationIndex = getRandomNumber(0, operations.length - 1) // выбираем случйную операцию из трех
   const operation = operations[operationIndex]
 
   let question

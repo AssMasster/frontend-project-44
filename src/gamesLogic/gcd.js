@@ -2,10 +2,14 @@ import getRandomNumber from '../utils/random.js'
 
 export const gameRules = 'Find the greatest common divisor of given numbers.'
 
+function isDivisorOfNum (num, divisor) {
+  return num % divisor === 0
+}
+
 function findNod(num1, num2) {
   const smallestNum = num1 > num2 ? num2 : num1
   for (let i = smallestNum; i > 1; i -= 1) {
-    if (num1 % i === 0 && num2 % i === 0) {
+    if (isDivisorOfNum(num1, i) && isDivisorOfNum(num2, i)) {
       return i
     }
   }

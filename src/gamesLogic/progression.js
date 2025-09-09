@@ -6,7 +6,8 @@ function creatProgression() {
   const start = getRandomNumber(0, 10)
   const step = getRandomNumber(1, 20)
   const progression = []
-  for (let i = 0; i < 10; i++) {
+  const progressionLength = 10
+  for (let i = 0; i < progressionLength; i++) {
     progression[i] = start + i * step
   }
   return progression

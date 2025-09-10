@@ -2,7 +2,7 @@ import getRandomNumber from '../utils/random.js'
 
 export const gameRules = 'Find the greatest common divisor of given numbers.'
 
-function isDivisorOfNum (num, divisor) {
+function isDivisorOfNum(num, divisor) {
   return num % divisor === 0
 }
 

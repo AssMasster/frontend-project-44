@@ -1,6 +1,7 @@
 import getRandomNumber from '../utils/random.js'
 
 export function isPrime(num) {
+  if (num === 1) return true
   const halfOfNum = Math.floor(num / 2);
   for (let i = halfOfNum; i > 1; i -= 1) {
     if (num % i === 0) {
